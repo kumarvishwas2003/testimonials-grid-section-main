@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    min-width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(210, 46%, 95%);
+    /* flex-wrap: wrap; */
+    
+}
+.container{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    padding:30px;
+    display: grid;
+    row-gap: 20px;
+    column-gap: 20px;
+    height: 70%;
+    width: 80%;
+    column-gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    border-radius: 2px;
+    font-size: 13px;
+}
+.danial,.kiara,.jonathan,.jannet,.pattrick{
+    border-radius: 5px;
+    padding: 30px;
+}
+.round{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+/* danial */
+.danial{
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 75%;
+    background-color: hsl(263, 55%, 52%);
+    grid-row-start: 1;
+    grid-row-end:2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.danial-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.danial-head{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    max-width: 95%;    
+}
+.danial-name{
+    margin-left: 10px;
+    color: white;
+}
+.verified{
+    color: hsla(0, 0%, 100%, 0.32);
+}
+.danial-quote{
+    color: hsla(0, 0%, 100%, 0.32);
+    max-width: 95%;
+}
+/*jonathns*/    
+.jonathan{
+    background-color: hsl(217, 19%, 35%);
+    grid-row-start: 1;
+    grid-row-end:2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.jonathan-desc{
+    display: flex;
+}
+.jonathan-head{
+    color: white;
+}
+/*janet*/
+.jannet{
+    background-color: hsl(0, 0%, 100%);
+    grid-row-start: 2;
+    grid-row-end:3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.jannet-desc{
+    display: flex;
+}
+.janet-head{
+    color:hsl(217, 19%, 35%);
+}
+/*pattrick*/
+.pattrick{
+    background-color: hsl(219, 29%, 14%);
+    grid-row-start: 2;
+    grid-row-end:3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.patrick-desc{
+    display: flex;
+}
+.patrick-head{
+    color:white;
+}
+/*kiara*/
+.kiara-desc{
+    display: flex;
+}
+.kiara-head{
+    color:hsl(215, 18%, 24%);
+}
+.kiara{
+    background-color: white;
+    grid-row-start: 1;
+    grid-row-end:3;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    
+}
+@media (max-width:1440px) {
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
